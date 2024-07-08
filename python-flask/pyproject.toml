@@ -10,9 +10,8 @@ readme = "README.md"
 python = "^3.11"
 flask = "^3.0.3"
 
-[tool.poetry.dev.dependencies]
-black = "^24.4.2 "
-ruff = "^0.5.1 "
+[tool.poetry.group.dev.dependencies]
+black = "=24.4.2"
 
 [tool.poetry.scripts]
 app = 'app:main'
@@ -24,16 +23,3 @@ build-backend = "poetry.core.masonry.api"
 [tool.black]
 line-length = 90
 target-version = ["py311",]
-
-[tool.ruff]
-target-version = "py311"
-line-length = 90
-select = [
-    "F",    # pyflakes
-    "E",    # pycodestyle Error
-    "W",    # pycodestle Warning
-    "I",    # isort
-    "B",    # bugbear
-    "C90",  # mccabe
-    "N",    # pep8-naming
-]
