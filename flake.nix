@@ -4,8 +4,8 @@
 
   outputs = { ... }: {
     templates = {
-      meta = {
-        path = ./python-flake;
+      python-flask = {
+        path = ./python-flask;
         description =
           "Flake for Flask project, includes formatting and linting.";
       };
