@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+ruff = "^0.0.290"
+
+[tool.poetry.scripts]
+app = 'app:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 90
+target-version = ["py311",]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 90
+select = [
+    "F",    # pyflakes
+    "E",    # pycodestyle Error
+    "W",    # pycodestle Warning
+    "I",    # isort
+    "B",    # bugbear
+    "C90",  # mccabe
+    "N",    # pep8-naming
+]
