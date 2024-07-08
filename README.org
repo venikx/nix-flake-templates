@@ -1,0 +1,10 @@
+#+title: Nix Community Templates
+
+A collection of basic project templates for a wide variety of languages.
+
+* Usage
+Replace `<template>` with the name of the language template you would like to use.
+#+begin_src sh
+mkdir project && cd project
+nix flake init -t github:venikx/nix-flake-templates#<template>
+#+end_src

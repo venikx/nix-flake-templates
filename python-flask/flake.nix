@@ -1,5 +1,5 @@
 {
-  description = "Application packaged using poetry2nix";
+  description = "Python application packaged using poetry2nix";
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
