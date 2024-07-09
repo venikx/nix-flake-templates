@@ -9,6 +9,10 @@
         description =
           "Flake for Flask project, includes formatting and linting.";
       };
+      go-minimal = {
+        path = ./go-minimal;
+        description = "Flake for minimal Golang project.";
+      };
     };
   };
 }
