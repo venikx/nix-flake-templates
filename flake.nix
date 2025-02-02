@@ -17,6 +17,10 @@
         description =
           "Flake for Flask project, includes formatting and linting.";
       };
+      typescript-aws-cdk = {
+        path = ./typescript-aws-cdk;
+        description = "Flake for Typescript with AWS CDK.";
+      };
     };
   };
 }
